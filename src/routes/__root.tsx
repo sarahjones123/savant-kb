@@ -68,9 +68,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Savant Docs" },
+      { title: "Savant" },
       { name: "description", content: "Documentation for AI-native data automation" },
-      { property: "og:title", content: "Savant Docs" },
+      { property: "og:title", content: "Savant" },
       { property: "og:description", content: "Documentation for AI-native data automation" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

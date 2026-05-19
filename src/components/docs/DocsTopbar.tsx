@@ -27,7 +27,7 @@ export function DocsTopbar() {
             <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-primary to-[var(--primary-glow)] text-primary-foreground shadow-sm">
               <Sparkles className="h-3.5 w-3.5" />
             </span>
-            <span className="tracking-tight">Savant Docs</span>
+            <span className="tracking-tight">Savant</span>
           </Link>
 
           <nav className="ml-6 hidden items-center gap-1 text-sm md:flex">

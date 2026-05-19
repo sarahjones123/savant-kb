@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
         content:
           "Build governed data workflows with Savant. Guides, agent references, connector docs, and ready-to-clone templates for finance, ops, and analytics teams.",
       },
-      { property: "og:title", content: "Savant Docs" },
+      { property: "og:title", content: "Savant" },
       {
         property: "og:description",
         content:
@@ -80,7 +80,7 @@ function LandingNav({ onSearch }: { onSearch: () => void }) {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] text-primary-foreground shadow-sm">
             <Sparkles className="h-4 w-4" />
           </span>
-          <span className="tracking-tight">Savant Docs</span>
+          <span className="tracking-tight">Savant</span>
         </Link>
         <nav className="ml-4 hidden items-center gap-1 text-sm md:flex">
           <Link

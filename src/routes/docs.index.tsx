@@ -23,13 +23,13 @@ const ICONS: Record<string, LucideIcon> = {
 export const Route = createFileRoute("/docs/")({
   head: () => ({
     meta: [
-      { title: "Savant Docs — Build governed data workflows" },
+      { title: "Savant — Build governed data workflows" },
       {
         name: "description",
         content:
           "Guides, references, and templates for building AI-powered data automations with Savant Labs.",
       },
-      { property: "og:title", content: "Savant Docs" },
+      { property: "og:title", content: "Savant" },
       {
         property: "og:description",
         content: "Everything you need to ship governed data workflows with Savant.",
