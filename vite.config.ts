@@ -10,7 +10,7 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 const base = process.env.VITE_BASE_PATH ?? "/";
 
 export default defineConfig({
-  base,
+  base: "/savant-kb/",
   plugins: [
     tsConfigPaths(),
     TanStackRouterVite({ target: "react", autoCodeSplitting: true }),
