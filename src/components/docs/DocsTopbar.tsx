@@ -1,3 +1,4 @@
+import { ThemeToggle } from "../ThemeToggle";
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, Search, Sparkles, X } from "lucide-react";
@@ -85,7 +86,7 @@ export function DocsTopbar() {
                 <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-[0.65rem] font-medium text-muted-foreground">K</kbd>
               </span>
             </button>
-
+              <ThemeToggle/>
             <a
               href="https://savantlabs.io/book-a-demo/"
               target="_blank"

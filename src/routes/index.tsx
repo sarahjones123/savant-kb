@@ -1,3 +1,4 @@
+import { ThemeToggle } from "../components/ThemeToggle";
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
@@ -156,6 +157,7 @@ function LandingNav({ onSearch }: { onSearch: () => void }) {
               <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 text-[0.65rem]">K</kbd>
             </span>
           </button>
+          <ThemeToggle/>
           <a
             href="https://savantlabs.io/book-a-demo/"
             target="_blank"

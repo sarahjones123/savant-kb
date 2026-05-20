@@ -385,3 +385,12 @@ article ul li {
 article ul li::marker {
   content: "• " !important;
 }
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background: #0f172a;
+  color: #f8fafc;
+}
