@@ -3,13 +3,13 @@ title: "Your first workflow"
 collection: "Getting Started"
 description: "A guided build of a realistic three-step workflow with branching and notifications."
 order: 4
-updated: "2025-05-05"
+updated: "2026-05-05"
 icon: "workflow"
 ---
 
 # Your first workflow
 
-The [Quickstart](/docs/quickstart) got you running in ten minutes. This guide goes one step deeper: a realistic three-step workflow with branching, error handling, and a Slack notification.
+The [Quickstart](/savant-kb/docs/quickstart) got you running in ten minutes. This guide goes one step deeper: a realistic three-step workflow with branching, error handling, and a Slack notification.
 
 ## The scenario
 
@@ -56,6 +56,6 @@ Append the enriched stream to `analytics.orders_enriched` in Snowflake. Then add
 
 ## Where to go next
 
-- [Workflows overview](/docs/workflows-overview)
-- [Fuse Agent](/docs/fuse-agent)
-- [S3 connector](/docs/s3-connector)
+- [Workflows overview](/savant-kb/docs/workflows-overview)
+- [Fuse Agent](/savant-kb/docs/fuse-agent)
+- [S3 connector](/savant-kb/docs/s3-connector)

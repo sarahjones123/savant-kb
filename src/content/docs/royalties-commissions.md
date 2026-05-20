@@ -3,7 +3,7 @@ title: "Royalties & commissions template"
 collection: "Templates & Solutions"
 description: "Tiered comp calculation with clawbacks, splits, and payout file export."
 order: 4
-updated: "2025-05-03"
+updated: "2026-05-03"
 icon: "money"
 ---
 
@@ -52,5 +52,5 @@ Each rep gets a one-page PDF with their deals, tier walk, accelerators applied, 
 
 ## Where to go next
 
-- [Templates overview](/docs/templates-overview)
-- [Governance & audit trail](/docs/governance-audit-trail)
+- [Templates overview](/savant-kb/docs/templates-overview)
+- [Governance & audit trail](/savant-kb/docs/governance-audit-trail)

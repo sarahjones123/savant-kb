@@ -3,7 +3,7 @@ title: "Sales & use tax template"
 collection: "Templates & Solutions"
 description: "Aggregate sales by jurisdiction, apply nexus rules, and produce return-ready filings."
 order: 3
-updated: "2025-05-07"
+updated: "2026-05-07"
 icon: "percent"
 ---
 
@@ -49,5 +49,5 @@ When tax collected ≠ tax due:
 
 ## Where to go next
 
-- [Templates overview](/docs/templates-overview)
-- [Functions reference](/docs/functions-reference)
+- [Templates overview](/savant-kb/docs/templates-overview)
+- [Functions reference](/savant-kb/docs/functions-reference)

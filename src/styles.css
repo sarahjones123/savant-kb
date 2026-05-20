@@ -344,3 +344,44 @@ body {
   background: var(--bg);
   color: var(--text);
 }
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose ol ul {
+  list-style-type: disc;
+}
+
+.prose ol ul li {
+  display: list-item;
+}
+
+.prose ul,
+.prose ol ul,
+.markdown ul,
+.markdown-body ul,
+article ul {
+  list-style-type: disc !important;
+  padding-left: 1rem !important;
+}
+
+.prose ul li,
+.prose ol ul li,
+.markdown ul li,
+.markdown-body ul li,
+article ul li {
+  display: list-item !important;
+}
+
+.prose ul li::marker,
+.prose ol ul li::marker,
+.markdown ul li::marker,
+.markdown-body ul li::marker,
+article ul li::marker {
+  content: "• " !important;
+}

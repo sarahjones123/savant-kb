@@ -3,7 +3,7 @@ title: "Welcome to Savant"
 collection: "Getting Started"
 description: "An overview of the Savant data automation platform and how this documentation is organized."
 order: 1
-updated: "2026-07-20"
+updated: "2026-05-20"
 icon: "sparkles"
 ---
 
@@ -94,8 +94,11 @@ Check out our library of solution templates, simply replace with your own data t
 | Templates & Solutions | Pre-built workflows for finance, ops, and revenue teams |
 | Reference | Functions, shortcuts, and API access |
 
+---
+
 ## Where to go next
 
-- [Quickstart](/docs/quickstart) — build your first workflow
-- [Workspace setup](/docs/workspace-setup) — invite teammates and configure roles
-- [Workflows overview](/docs/workflows-overview) — understand Savant's core abstraction
+- [Quickstart](/savant-kb/docs/quickstart) — build your first workflow
+- [Workspace setup](/savant-kb/docs/workspace-setup) — invite teammates and configure roles
+- [Workflows overview](/savant-kb/docs/workflows-overview) — understand Savant's core abstraction
+

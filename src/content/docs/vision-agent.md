@@ -3,7 +3,7 @@ title: "Vision Agent"
 collection: "Agents"
 description: "Extract structured data from PDFs, scanned documents, and images."
 order: 4
-updated: "2025-05-06"
+updated: "2026-05-06"
 icon: "eye"
 ---
 
@@ -47,5 +47,5 @@ Vision is priced per page, not per call. Multi-page documents (e.g. 30-page cont
 
 ## Where to go next
 
-- [Connectors overview](/docs/connectors-overview)
-- [S3 connector](/docs/s3-connector)
+- [Connectors overview](/savant-kb/docs/connectors-overview)
+- [S3 connector](/savant-kb/docs/s3-connector)

@@ -3,7 +3,7 @@ title: "Keyboard shortcuts"
 collection: "Reference"
 description: "Move through the canvas, inspector, and command palette without touching the mouse."
 order: 2
-updated: "2025-05-01"
+updated: "2026-05-01"
 icon: "keyboard"
 ---
 
@@ -53,4 +53,4 @@ Savant is designed to be fast for builders who don't want to take their hands of
 
 ## Where to go next
 
-- [Functions reference](/docs/functions-reference)
+- [Functions reference](/savant-kb/docs/functions-reference)

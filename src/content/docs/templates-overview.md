@@ -3,7 +3,7 @@ title: "Templates overview"
 collection: "Templates & Solutions"
 description: "Start from a proven workflow instead of a blank canvas."
 order: 1
-updated: "2025-05-11"
+updated: "2026-05-11"
 icon: "template"
 ---
 
@@ -26,9 +26,9 @@ There is no template lock-in — once installed, it's just a workflow.
 
 | Template | Domain | What it does |
 |---|---|---|
-| [Financial reconciliation](/docs/financial-reconciliation) | Finance | Bank ↔ GL reconciliation with break analysis |
-| [Sales & use tax](/docs/sales-tax) | Tax | Multi-jurisdiction return prep |
-| [Royalties & commissions](/docs/royalties-commissions) | Revenue | Tiered comp calculation with payout export |
+| [Financial reconciliation](/savant-kb/docs/financial-reconciliation) | Finance | Bank ↔ GL reconciliation with break analysis |
+| [Sales & use tax](/savant-kb/docs/sales-tax) | Tax | Multi-jurisdiction return prep |
+| [Royalties & commissions](/savant-kb/docs/royalties-commissions) | Revenue | Tiered comp calculation with payout export |
 
 ## Customizing safely
 
@@ -39,5 +39,5 @@ When a template ships an update, Savant shows you a node-level diff. You decide 
 
 ## Where to go next
 
-- [Financial reconciliation](/docs/financial-reconciliation)
-- [Sales & use tax](/docs/sales-tax)
+- [Financial reconciliation](/savant-kb/docs/financial-reconciliation)
+- [Sales & use tax](/savant-kb/docs/sales-tax)

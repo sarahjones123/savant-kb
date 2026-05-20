@@ -3,7 +3,7 @@ title: "Workspace setup"
 collection: "Getting Started"
 description: "Invite teammates, configure roles, and set up environments for safe collaboration."
 order: 3
-updated: "2025-04-30"
+updated: "2026-04-30"
 icon: "users"
 ---
 
@@ -46,6 +46,5 @@ Under **Settings → Defaults**, configure:
 
 ## Where to go next
 
-- [Your first workflow](/docs/your-first-workflow)
-- [Governance & audit trail](/docs/governance-audit-trail)
-- [API tokens](/docs/api-tokens)
+- [Your first workflow](/savant-kb/docs/your-first-workflow)
+- [Governance & audit trail](/savant-kb/docs/governance-audit-trail)

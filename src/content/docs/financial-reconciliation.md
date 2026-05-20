@@ -3,7 +3,7 @@ title: "Financial reconciliation template"
 collection: "Templates & Solutions"
 description: "Match transactions between your bank statement and general ledger, surface breaks, and produce auditor-ready evidence."
 order: 2
-updated: "2025-05-10"
+updated: "2026-05-10"
 icon: "balance"
 ---
 
@@ -55,5 +55,5 @@ Drop it directly into your audit folder.
 
 ## Where to go next
 
-- [Fuse Agent](/docs/fuse-agent)
-- [Governance & audit trail](/docs/governance-audit-trail)
+- [Fuse Agent](/savant-kb/docs/fuse-agent)
+- [Governance & audit trail](/savant-kb/docs/governance-audit-trail)

@@ -2,14 +2,14 @@
 title: "Connectors overview"
 collection: "Connectors & Files"
 description: "How Savant talks to databases, warehouses, SaaS apps, and file systems — securely."
-order: 1
-updated: "2025-04-18"
+order: 2
+updated: "2026-04-18"
 icon: "plug"
 ---
 
 # Connectors overview
 
-Savant ships with 70+ connectors covering databases, warehouses, SaaS apps, file systems, and message queues. Every connector follows the same model.
+Savant ships with 200+ connectors covering databases, warehouses, SaaS apps, file systems, and message queues. Every connector follows the same model.
 
 ## The connector model
 
@@ -49,6 +49,6 @@ cursor: updated_at
 
 ## Where to go next
 
-- [Snowflake connector](/docs/snowflake-connector)
-- [Excel files](/docs/excel-files)
-- [S3 connector](/docs/s3-connector)
+- [Snowflake connector](/savant-kb/docs/snowflake-connector)
+- [Excel files](/savant-kb/docs/excel-files)
+- [S3 connector](/savant-kb/docs/s3-connector)

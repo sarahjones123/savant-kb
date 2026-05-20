@@ -76,12 +76,13 @@ function LandingNav({ onSearch }: { onSearch: () => void }) {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1200px] items-center gap-6 px-4 lg:px-6">
-        <Link to="/" className="flex items-center gap-2 font-semibold">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] text-primary-foreground shadow-sm">
-            <Sparkles className="h-4 w-4" />
-          </span>
-          <span className="tracking-tight">Savant</span>
-        </Link>
+            <Link to="/" className="flex items-center">
+              <img
+                src="/savant-kb/images/savant-logo.png"
+                alt="Savant"
+                className="h-8 w-auto"
+              />
+            </Link>
         <nav className="ml-4 hidden items-center gap-1 text-sm md:flex">
           <Link
             to="/docs"
@@ -89,29 +90,57 @@ function LandingNav({ onSearch }: { onSearch: () => void }) {
           >
             Docs
           </Link>
-          <a
+          {/* <a
             href="https://savantlabs.io"
             target="_blank"
             rel="noreferrer"
             className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
           >
             Product
+          </a> */}
+{/* 
+  <a
+    href="https://app.savantlabs.io"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+          >
+    Go to Savant app
+  </a> */}
+
+  <a
+    href="https://community.savantlabs.io/courses"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+          >
+    Academy
+  </a>
+
+  <a
+    href="https://community.savantlabs.io/c/savant-bootcamp"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+          >
+    Bootcamp
+  </a>
+
+          <a
+            href="https://savantlabs.io/blog/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+          >
+            Blog
           </a>
           <a
-            href="https://savantlabs.io/pricing"
+            href="https://savantlabs.io/pricing/"
             target="_blank"
             rel="noreferrer"
             className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
           >
             Pricing
-          </a>
-          <a
-            href="https://savantlabs.io/contact"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
-          >
-            Contact
           </a>
         </nav>
         <div className="ml-auto flex items-center gap-3">
@@ -128,12 +157,20 @@ function LandingNav({ onSearch }: { onSearch: () => void }) {
             </span>
           </button>
           <a
-            href="https://savantlabs.io/contact"
+            href="https://savantlabs.io/book-a-demo/"
             target="_blank"
             rel="noreferrer"
             className="hidden h-9 items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] px-4 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-95 sm:inline-flex"
           >
             Book a demo
+          </a>
+                    <a
+            href="https://app.savantlabs.io"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden h-9 items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] px-4 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-95 sm:inline-flex"
+          >
+            Go to Savant app
           </a>
         </div>
       </div>
@@ -171,21 +208,20 @@ function Hero({ onSearch }: { onSearch: () => void }) {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+          {/* <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             Documentation v2 · Updated May 2026
-          </span>
+          </span> */}
 
-          <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Documentation that works as hard as{" "}
+          <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-7xl">
+            Everything you need to master{" "}
             <span className="bg-gradient-to-r from-primary to-[var(--primary-glow)] bg-clip-text text-transparent">
-              your data.
+              Savant.
             </span>
           </h1>
 
           <p className="mt-5 text-pretty text-base text-muted-foreground sm:text-lg">
-            Guides, agent references, connector docs, and ready-to-clone templates for
-            building governed data workflows with Savant.
+            Guides, agent references, connector docs, and step-by-step walkthroughs — so you can build smarter analytics, faster.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -220,10 +256,10 @@ function Hero({ onSearch }: { onSearch: () => void }) {
         {/* trust strip */}
         <div className="mt-16 grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
           {[
-            { k: "24", v: "Articles" },
-            { k: "6", v: "Topics" },
-            { k: "70+", v: "Connectors" },
-            { k: "SOC 2", v: "Type II" },
+            { k: "100+", v: "Articles" },
+            { k: "26", v: "Topics" },
+            { k: "200+", v: "Connectors" },
+            { k: "AI-native", v: "Analytics automation" },
           ].map((s) => (
             <div key={s.v} className="rounded-xl border border-border/70 bg-card/50 px-4 py-5 backdrop-blur">
               <div className="text-2xl font-semibold tracking-tight text-foreground">
@@ -442,7 +478,7 @@ function CTABand() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="https://savantlabs.io/contact"
+              href="https://savantlabs.io/book-a-demo/"
               target="_blank"
               rel="noreferrer"
               className="inline-flex h-11 items-center gap-2 rounded-xl bg-background px-5 text-sm font-medium text-foreground shadow-sm transition hover:opacity-95"
@@ -469,14 +505,16 @@ function Footer() {
     <footer className="border-t border-border/60">
       <div className="mx-auto flex max-w-[1200px] flex-col items-start justify-between gap-6 px-4 py-10 sm:flex-row sm:items-center lg:px-6">
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-primary to-[var(--primary-glow)] text-primary-foreground">
-            <Sparkles className="h-3.5 w-3.5" />
-          </span>
+            <img
+              src="/savant-kb/images/savant-logo.png"
+              alt="Savant"
+              className="h-7 w-auto"
+            />
           <span>© {new Date().getFullYear()} Savant Labs. All rights reserved.</span>
         </div>
         <div className="flex items-center gap-5 text-sm text-muted-foreground">
-          <Link to="/docs" className="hover:text-foreground">Docs</Link>
-          <a href="https://savantlabs.io" target="_blank" rel="noreferrer" className="hover:text-foreground">Product</a>
+          {/* <Link to="/docs" className="hover:text-foreground">Docs</Link>
+          <a href="https://savantlabs.io" target="_blank" rel="noreferrer" className="hover:text-foreground">Product</a> */}
           <a href="https://savantlabs.io/pricing" target="_blank" rel="noreferrer" className="hover:text-foreground">Pricing</a>
           <a href="https://savantlabs.io/contact" target="_blank" rel="noreferrer" className="hover:text-foreground">Contact</a>
           <a

@@ -1,37 +1,12 @@
 // Eagerly import every markdown file as raw text. Vite handles this at build time.
 const files = import.meta.glob("./docs/*.md", {
-  query: "?raw",
-  import: "default",
+  as: "raw",
   eager: true,
 }) as Record<string, string>;
 
-export interface Frontmatter {
-  title: string;
-  collection: string;
-  description: string;
-  order: number;
-  updated: string;
-  icon?: string;
-}
-
-export interface Doc {
-  slug: string;
-  fm: Frontmatter;
-  body: string;
-}
-
-export interface Collection {
-  name: string;
-  slug: string;
-  description: string;
-  icon: string;
-  docs: Doc[];
-}
-
-// Tiny YAML-ish frontmatter parser. Each line is `key: value` where value
-// is a JSON literal (string/number). Good enough for our controlled content.
 function parseFrontmatter(raw: string): { fm: Frontmatter; body: string } {
-  const match = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(raw);
+  const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw);
+
   if (!match) {
     return {
       fm: {
@@ -44,18 +19,23 @@ function parseFrontmatter(raw: string): { fm: Frontmatter; body: string } {
       body: raw,
     };
   }
+
   const [, head, body] = match;
   const fm: Record<string, unknown> = {};
-  for (const line of head.split("\n")) {
+
+  for (const line of head.split(/\r?\n/)) {
     const m = /^([a-zA-Z_][\w-]*)\s*:\s*(.*)$/.exec(line);
     if (!m) continue;
+
     const [, k, v] = m;
+
     try {
       fm[k] = JSON.parse(v);
     } catch {
-      fm[k] = v;
+      fm[k] = v.replace(/^["']|["']$/g, "");
     }
   }
+
   return { fm: fm as unknown as Frontmatter, body };
 }
 

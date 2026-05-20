@@ -2,64 +2,113 @@
 title: "Quickstart"
 collection: "Getting Started"
 description: "Build, run, and schedule your first Savant workflow in under ten minutes."
-order: 2
-updated: "2025-05-12"
+order: 3
+updated: "2026-05-12"
 icon: "rocket"
 ---
 
 # Quickstart
 
-This walkthrough takes you from signup to a scheduled, governed workflow in under ten minutes. We'll load a sample CSV, clean it with the **Infer Agent**, and write the result to a destination of your choice.
+Use this quickstart guide to create your first Savant workflow, run it, review the results, and schedule it for recurring execution. This article is intended for new users who want to quickly understand the basic workflow creation process in Savant.
 
-## Prerequisites
+---
 
-- A Savant workspace (create one at [app.savantlabs.io](https://app.savantlabs.io))
-- The sample file `customers_raw.csv` (download from the Quickstart panel inside the app)
+## Before you begin
 
-## 1. Create a workflow
+Ensure that you have:
 
-From the workspace home, click **New Workflow** → **Blank canvas**. Name it `Quickstart`.
+- A valid Savant account.
+- Access to your organization’s Savant workspace.
+- Permission to create and run workflows.
+- Access to the required data source or sample data.
+- The required destination or output location, if you want to export results.
 
-## 2. Add a source
+---
 
-Drag a **File → CSV** node onto the canvas and upload `customers_raw.csv`. Click **Preview** to confirm the schema was detected:
+## Procedure to create your first workflow
 
-```text
-id (integer)        name (string)       country (string)      revenue (number?)
-```
+### Step 1: Access your workspace
 
-!!! note
-    The `?` next to `revenue` means the column has missing values — perfect for the next step.
+1. Sign in to **Savant**.
+2. Select your organization’s workspace from the workspace dropdown.
+3. Confirm that you are in the correct workspace before creating the workflow.
 
-## 3. Clean with the Infer Agent
+---
 
-Add an **Infer Agent** node and connect it to the CSV. Configure it:
+### Step 2: Create a workflow
 
-- **Target column:** `country`
-- **Strategy:** Standardize to ISO 3166 country codes
-- **Fill missing:** Yes, infer from `name` + free-text address fields
+1. From the workspace, select **Create**.
+2. Select **Workflow**.
+3. Enter a clear workflow name.
+4. Select **Create** to open the workflow canvas.
 
-Click **Run step**. Savant will preview the cleaned data and show you exactly which rows changed.
+---
 
-## 4. Write to a destination
+### Step 3: Add a data source
 
-Drag a **Destination → Snowflake** node (or any connector you've configured). Map the columns, choose **Append**, and run the full workflow.
+1. On the workflow canvas, select **Add source**.
+2. Choose the required data source.
+3. Connect to the source using the available connection options.
+4. Select the table, file, or dataset you want to use.
+5. Preview the data to confirm that the correct source is selected.
 
-## 5. Schedule it
+---
 
-Open the **Schedule** tab and set a cron-like trigger:
+### Step 4: Prepare the data
 
-```text
-Every weekday at 06:00 America/New_York
-```
+1. Add the required preparation steps, such as:
+    - Filtering rows.
+    - Selecting columns.
+    - Renaming fields.
+    - Changing data types.
+    - Removing duplicates.
+    - Creating calculated fields.
 
-That's it — your workflow now runs automatically every business morning, with every run logged in the audit trail.
+2. Review the preview after each step to confirm that the data is transformed correctly.
 
-!!! tip "Next: make it bulletproof"
-    Read [Governance & audit trail](/docs/governance-audit-trail) to learn how to lock down who can edit and who can deploy.
+---
 
-## Where to go next
+### Step 5: Add an output
 
-- [Workspace setup](/docs/workspace-setup)
-- [Workflows overview](/docs/workflows-overview)
-- [Infer Agent](/docs/infer-agent)
+1. Select **Add destination** or **Output**.
+2. Choose where the workflow results should be saved.
+3. Configure the output settings, such as file name, table name, or destination folder.
+4. Save the output configuration.
+
+---
+
+### Step 6: Run the workflow
+
+1. Select **Run**.
+2. Wait for the workflow execution to complete.
+3. Review the run status.
+4. Open the output or results preview to verify that the workflow generated the expected data.
+
+---
+
+### Step 7: Schedule the workflow
+
+1. Select **Schedule**.
+2. Choose how often the workflow should run.
+3. Set the start date and time.
+4. Confirm the schedule settings.
+5. Save the schedule.
+
+---
+
+## Troubleshooting
+
+| Issue | Possible resolution |
+|------|---------------------|
+| You cannot create a workflow | Confirm that you have permission to create workflows in the selected workspace. |
+| You cannot connect to a data source | Verify that the connection is configured and that you have access to the source. |
+| The data preview does not load | Refresh the source, check connection permissions, and try again. |
+| The workflow run fails | Review the error message, check each workflow step, and rerun the workflow. |
+| The output is missing | Confirm that the destination is configured correctly and that the workflow completed successfully. |
+| The schedule does not run | Verify that the schedule is enabled and that the workflow has no unresolved errors. |
+
+---
+
+## Result
+
+Your first Savant workflow is created, executed, and scheduled. You can now use the workflow to automate recurring data preparation, analysis, and reporting tasks.

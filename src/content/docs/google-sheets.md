@@ -3,7 +3,7 @@ title: "Google Sheets"
 collection: "Connectors & Files"
 description: "Read and write live Google Sheets — by URL, with named ranges, and through service accounts."
 order: 4
-updated: "2025-04-25"
+updated: "2026-04-25"
 icon: "sheet"
 ---
 
@@ -50,5 +50,5 @@ Three modes:
 
 ## Where to go next
 
-- [Excel files](/docs/excel-files)
-- [Snowflake connector](/docs/snowflake-connector)
+- [Excel files](/savant-kb/docs/excel-files)
+- [Snowflake connector](/savant-kb/docs/snowflake-connector)

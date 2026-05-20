@@ -3,7 +3,7 @@ title: "Fuse Agent"
 collection: "Agents"
 description: "Probabilistic joins for entities that don't share a clean key."
 order: 3
-updated: "2025-05-09"
+updated: "2026-05-09"
 icon: "link"
 ---
 
@@ -50,5 +50,5 @@ The `_fuse_explain` column makes review fast — a human can read it and decide 
 
 ## Where to go next
 
-- [Match Agent](/docs/match-agent) — when you need transitive entity resolution
-- [Financial reconciliation template](/docs/financial-reconciliation)
+- [Match Agent](/savant-kb/docs/match-agent) — when you need transitive entity resolution
+- [Financial reconciliation template](/savant-kb/docs/financial-reconciliation)

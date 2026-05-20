@@ -3,7 +3,7 @@ title: "Agents overview"
 collection: "Platform Concepts"
 description: "AI agents are the building blocks for inference, transformation, matching, and document extraction."
 order: 2
-updated: "2025-05-08"
+updated: "2026-05-08"
 icon: "sparkles"
 ---
 
@@ -21,11 +21,11 @@ Every agent in Savant is:
 
 | Agent | Purpose | Typical input | Typical output |
 |---|---|---|---|
-| [Infer](/docs/infer-agent) | Fill, classify, normalize | Sparse / dirty columns | Cleaned, typed columns |
-| [Transform](/docs/transform-agent) | Reshape with natural language | Any table | Reshaped table |
-| [Fuse](/docs/fuse-agent) | Probabilistic join / match | Two tables | Joined table with confidence |
-| [Vision](/docs/vision-agent) | Extract from documents/images | PDFs, scans, images | Structured rows |
-| [Match](/docs/match-agent) | Entity resolution | Two entity lists | Match groups |
+| [Infer](/savant-kb/docs/infer-agent) | Fill, classify, normalize | Sparse / dirty columns | Cleaned, typed columns |
+| [Transform](/savant-kb/docs/transform-agent) | Reshape with natural language | Any table | Reshaped table |
+| [Fuse](/savant-kb/docs/fuse-agent) | Probabilistic join / match | Two tables | Joined table with confidence |
+| [Vision](/savant-kb/docs/vision-agent) | Extract from documents/images | PDFs, scans, images | Structured rows |
+| [Match](/savant-kb/docs/match-agent) | Entity resolution | Two entity lists | Match groups |
 
 ## When to use an agent vs a function
 
@@ -46,5 +46,5 @@ Agents call models. Every call is metered and visible in **Settings → Usage**.
 
 ## Where to go next
 
-- [Infer Agent](/docs/infer-agent)
-- [Governance & audit trail](/docs/governance-audit-trail)
+- [Infer Agent](/savant-kb/docs/infer-agent)
+- [Governance & audit trail](/savant-kb/docs/governance-audit-trail)

@@ -3,7 +3,7 @@ title: "Governance & audit trail"
 collection: "Platform Concepts"
 description: "Every decision in Savant is logged, attributable, and reproducible — by design."
 order: 3
-updated: "2025-04-22"
+updated: "2026-04-22"
 icon: "shield"
 ---
 
@@ -55,5 +55,5 @@ The bundle includes a cryptographic manifest so auditors can verify nothing has 
 
 ## Where to go next
 
-- [Workspace setup](/docs/workspace-setup)
-- [API tokens](/docs/api-tokens)
+- [Workspace setup](/savant-kb/docs/workspace-setup)
+- [API tokens](/savant-kb/docs/api-tokens)

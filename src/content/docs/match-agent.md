@@ -3,7 +3,7 @@ title: "Match Agent"
 collection: "Agents"
 description: "Entity resolution across two or more lists — find the same thing under different names."
 order: 5
-updated: "2025-05-04"
+updated: "2026-05-04"
 icon: "merge"
 ---
 
@@ -44,5 +44,5 @@ Each input row gets a `match_group_id`. Rows in the same group are the same enti
 
 ## Where to go next
 
-- [Fuse Agent](/docs/fuse-agent)
-- [Templates overview](/docs/templates-overview)
+- [Fuse Agent](/savant-kb/docs/fuse-agent)
+- [Templates overview](/savant-kb/docs/templates-overview)

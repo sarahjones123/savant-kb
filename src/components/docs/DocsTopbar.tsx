@@ -23,12 +23,13 @@ export function DocsTopbar() {
             <Menu className="h-5 w-5" />
           </button>
 
-          <Link to="/" className="flex items-center gap-2 font-semibold">
-            <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-primary to-[var(--primary-glow)] text-primary-foreground shadow-sm">
-              <Sparkles className="h-3.5 w-3.5" />
-            </span>
-            <span className="tracking-tight">Savant</span>
-          </Link>
+            <Link to="/" className="flex items-center">
+              <img
+                src="/savant-kb/images/savant-logo.png"
+                alt="Savant"
+                className="h-8 w-auto"
+              />
+            </Link>
 
           <nav className="ml-6 hidden items-center gap-1 text-sm md:flex">
             <Link
@@ -38,12 +39,28 @@ export function DocsTopbar() {
               Docs
             </Link>
             <a
-              href="https://savantlabs.io"
+              href="https://community.savantlabs.io/courses"
               target="_blank"
               rel="noreferrer"
               className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
             >
-              Product
+              Academy
+            </a>
+            <a
+              href="https://community.savantlabs.io/c/savant-bootcamp"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+            >
+              Bootcamp
+            </a>
+            <a
+              href="https://savantlabs.io/blog/"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md px-3 py-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+            >
+              Blog
             </a>
             <a
               href="https://savantlabs.io/pricing"
@@ -70,12 +87,20 @@ export function DocsTopbar() {
             </button>
 
             <a
-              href="https://savantlabs.io/contact"
+              href="https://savantlabs.io/book-a-demo/"
               target="_blank"
               rel="noreferrer"
               className="hidden h-9 items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] px-4 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-95 sm:inline-flex"
             >
               Book a demo
+            </a>
+            <a
+              href="https://app.savantlabs.io"
+              target="_blank"
+              rel="noreferrer"
+              className="hidden h-9 items-center rounded-lg bg-gradient-to-br from-primary to-[var(--primary-glow)] px-4 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-95 sm:inline-flex"
+            >
+              Go to Savant app
             </a>
           </div>
         </div>
