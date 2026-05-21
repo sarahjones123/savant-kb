@@ -8,10 +8,15 @@ import "./styles.css";
 
 const queryClient = new QueryClient();
 
-// Vite injects the configured base path here at build time.
-// On GitHub Pages, this becomes `/<repo-name>/`. Locally it's `/`.
-// Strip the trailing slash for TanStack Router's `basepath` option.
 const basepath = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
+// GitHub Pages redirect fix
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get("redirect");
+
+if (redirect) {
+  window.history.replaceState(null, "", `${basepath}${redirect}`);
+}
 
 const router = createRouter({
   routeTree,
